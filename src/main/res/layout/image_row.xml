@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardView_id="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView_id"
+    android:layout_marginTop="5dp"
+    android:elevation="10dp"
+    cardView_id:cardBackgroundColor="@color/lightGrey"
+    cardView_id:cardCornerRadius="10dp"
+    android:layout_marginBottom="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="IMAGE"
+            android:textStyle="bold"
+            android:id="@+id/textView_image_name"
+            android:textColor="@color/cyan"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="FORMAT"
+            android:id="@+id/textView_image_format"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/cyan"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SIZE"
+            android:textColor="@color/cyan"
+            android:id="@+id/textView_image_size"
+            android:layout_below="@+id/textView_image_format"
+            android:layout_alignRight="@+id/textView_image_format"
+            android:layout_alignEnd="@+id/textView_image_format" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
